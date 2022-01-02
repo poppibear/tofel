@@ -1,0 +1,185 @@
+:root {
+    --black: #444;
+    --blue: #102f7d;
+    --white: #f0f0f0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    font-size: 1rem;
+}
+
+body {
+    //background-color: yellow;
+    font-family: “Helvetica Neue”, Helvetica, Tahoma, Verdana, 
+    “PingFang SC”, “Hiragino Sans GB” “Heiti SC”, “Microsoft Yahei”, 
+    “WenQuanYi Micro Hei”, “sans-serif”, "Apple Color Emoji", 
+    "Segoe UI Emoji", "Segoe UI Symbol”;
+}
+
+#header {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 60px;
+    z-index: 1;
+}
+
+#imgs {
+    display: flex;
+    align-items: center;
+}
+#header-img, #header-img2 {
+    padding-left: 16px;
+}
+#header nav {
+    /* float: right; */
+    /* height:inherit; */
+}
+a, a:link {
+    padding: 8px 8px;
+    color:var(--black);
+    text-decoration: none;
+    /* line-height: inherit; */
+    /* height: inherit; */
+    /* vertical-align: bottom; */
+}
+a:hover {
+    background-color: #A1B6FF;
+}
+
+main {
+    width: 100%;
+    max-width: 960px;
+    /* background-color: lightblue; */
+    margin: auto;
+}
+
+#video-container {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+    padding: 8px 0;
+}
+video {
+    width: 100%;
+    z-index: -1;
+}
+
+.landing-info {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 0;
+    align-items:stretch;
+    align-content: center;
+}
+
+.side {
+    width: 50%;
+    padding: 0 8px;
+}
+
+@media (max-width: 600px) {
+    .landing-info {
+        flex-direction: column;
+    }
+}
+@media (max-width: 600px) {
+    .side {
+        width: 100%;
+    }
+}
+.side h2 {
+    font-size: 1.2rem;
+    padding-bottom: 8px;
+    text-align:center;
+}
+p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    text-align: justify;
+    font-family: “Times New Roman”, Georgia, Garamond,
+    SimSun, “Songti SC Light”, serif;
+}
+.info-img {
+    display: block;
+    width: 50%;
+    height: auto;
+    background-color:lightseagreen;
+    border-style: solid;
+    border-width: .6rem;
+    border-color: rgb(233, 237, 255);
+    box-shadow: rgb(234, 244, 255) 2px 2px 2px;
+    border-radius: 2px;
+}
+@media (max-width: 600px) {
+    .info-img {
+        width: 100%;
+        max-width: 480px;
+        margin: auto;
+    }
+}
+ol {
+    list-style-position: outside;
+    padding-left: 10px;
+    list-style-type: circle;
+}
+
+li {
+    font-size: 0.7rem;
+    font-weight: 300;
+    line-height: 1.2rem;
+    text-align: justify;
+}
+#placeholder {
+    height: 60px;
+}
+#footer {
+    width: 96%;
+    max-width: 600px;
+    height: 40px;
+    background-color:rgb(255, 233, 208);
+    position: fixed;
+    bottom: 4px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 2px;
+}
+
+#form {
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    box-shadow: #888 2px 2px 2px;
+}
+
+input {
+    display: block;
+    height:80%;
+    //margin-right: 4px;
+    font-size: 0.8rem;
+}
+
+#email {
+    width: 60%;
+    border: none;
+    border-radius: 2px;
+}
+
+#submit {
+    background-color:rgb(224, 105, 8);
+    color: white;
+    width: 36%;
+    border: none;
+    border-radius: 2px;
+}
