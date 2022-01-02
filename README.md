@@ -4,3 +4,4 @@ Hello World repository for Git tutorial
 <hr>
 This repository is built step by step in the tutorial.
 <br>It is actually a class exercise.
+<br>with great effort to become a coder.
